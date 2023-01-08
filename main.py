@@ -19,7 +19,7 @@ def get_local_ip():
 
 
 local_ip_address = get_local_ip()
-url = "http://"+local_ip_address
+url = "http://"+local_ip_address+":80"
 qr = pyqrcode.create(url)
 qr_ascii = qr.terminal(quiet_zone=1)
 print(qr_ascii)
